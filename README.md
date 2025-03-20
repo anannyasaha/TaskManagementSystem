@@ -158,8 +158,6 @@ This project is licensed under the MIT License.
 
 For further questions, feel free to reach out to [your email] or create an issue on the repository.
 
-```
-
 ### Explanation of the Sections:
 
 1. **Description**: A high-level overview of the project, including what it does and the core features.
