@@ -62,8 +62,8 @@ git clone https://github.com/anannyasaha/TaskManagementSystem.git
    - Create a `.env` file in the `server` directory.
    - Add the following environment variables to the `.env` file:
      ```
-     MONGO_URL=mongodb://localhost:27017/task-manager
-     PORT=7000
+     MONGO_URL=mongodb://localhost:27017/DemoDB
+     PORT=8000
      ```
 
 4. **Run the Backend Server**:
@@ -72,7 +72,7 @@ git clone https://github.com/anannyasaha/TaskManagementSystem.git
    node index.js
    ```
 
-   The backend will now be running on `http://localhost:7000`.
+   The backend will now be running on `http://localhost:8000`.
 
 ### Step 4: Set Up the Frontend
 
@@ -173,5 +173,3 @@ For further questions, feel free to reach out to [your email] or create an issue
 5. **Project Structure**: An overview of the folder structure to help understand where each part of the code is located.
 6. **Contributing and License**: Provides guidelines for contributing and information about licensing.
 7. **Contact**: Information for users to get in touch if they have further questions.
-
-This should give users a complete, easy-to-follow guide for setting up and running your application.
