@@ -41,7 +41,7 @@ Before setting up the project, ensure you have the following installed:
 
 Clone the project repository to your local machine by running:
 ```bash
-git clone https://github.com/your-username/project-name.git
+git clone https://github.com/anannyasaha/TaskManagementSystem.git
 ```
 
 ### Step 3: Set Up the Backend
