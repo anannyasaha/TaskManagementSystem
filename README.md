@@ -1,4 +1,3 @@
-Here is the complete `README.md` file with everything included, ensuring it's easy to set up and run your project:
 
 ```markdown
 # Project Name: Task Management System
