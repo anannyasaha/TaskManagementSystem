@@ -1,5 +1,4 @@
 
-```markdown
 # Project Name: Task Management System
 
 ## Description
@@ -25,7 +24,6 @@ Before setting up the project, ensure you have the following installed:
    After installation, start MongoDB using the command:
    ```bash
    mongod
-   ```
    This starts the MongoDB service on your local machine.
 
 #### Install Node.js and npm
