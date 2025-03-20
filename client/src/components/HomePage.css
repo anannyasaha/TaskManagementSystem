@@ -1,0 +1,477 @@
+/* Task Table Styles */
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .table-responsive {
+    overflow-x: auto;
+    margin-top: 20px;
+  }
+  
+  .task-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .task-table th,
+  .task-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .task-table th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+    color: #333;
+    position: sticky;
+    top: 0;
+  }
+  
+  .task-table tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .description-cell {
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .priority-badge {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .priority-high {
+    background-color: #ffebee;
+    color: #d32f2f;
+  }
+  
+  .priority-medium {
+    background-color: #fff8e1;
+    color: #ff8f00;
+  }
+  
+  .priority-low {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+  }
+
+.status-badge {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+
+.status-working {
+  background-color: #e3f2fd;
+  color: #1976d2;
+}
+
+
+.status-completed {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+
+.status-support {
+  background-color: #f3e5f5;
+  color: #7b1fa2;
+}
+
+
+.status-overdue {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+
+.status-pending {
+  background-color: #f5f5f5;
+  color: #757575;
+}
+
+.status-new {
+  background-color: #fce5b9;
+  color: #b95401;
+}
+  
+  .btn-small {
+    padding: 4px 8px;
+    font-size: 12px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btn-delete {
+    background-color: #f32821;
+    color: white;
+  }
+  
+  .btn-view {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .action-buttons {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .error-message {
+    color: #d32f2f;
+    padding: 10px;
+    background-color: #ffebee;
+    border-radius: 4px;
+    margin: 10px 0;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .task-table th,
+    .task-table td {
+      padding: 8px 10px;
+      font-size: 14px;
+    }
+    
+    .description-cell {
+      max-width: 150px;
+    }
+  }
+  /* Clickable row styles */
+.clickable-row {
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.clickable-row:hover {
+  background-color: #f5f5f5;
+}
+
+/* View Task page styles */
+.view-task-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.task-badges {
+  display: flex;
+  gap: 10px;
+}
+
+.detail-row {
+  display: flex;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.detail-label {
+  width: 150px;
+  font-weight: bold;
+  color: #555;
+}
+
+.detail-value {
+  flex: 1;
+}
+
+.task-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+
+.priority-badge, .status-badge {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  display: inline-block;
+}
+
+
+.btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+.loading-spinner {
+  text-align: center;
+  padding: 40px;
+  font-size: 18px;
+  color: #777;
+}
+
+.error-message {
+  color: #dc3545;
+  padding: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.not-found-message {
+  color: #6c757d;
+  padding: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.file-link {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+
+/* Filter styles */
+.filters-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  min-width: 150px;
+}
+
+.filter-group label {
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.filter-group select {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: white;
+}
+
+/* Sortable header styles */
+.sortable-header {
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+}
+
+.sortable-header:hover {
+  background-color: #f0f0f0;
+}
+
+/* Results info */
+.results-info {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Pagination styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.pagination-button {
+  padding: 6px 12px;
+  border: 1px solid #ddd;
+  background-color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.pagination-button:hover:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.pagination-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination-button.active {
+  background-color: #4a90e2;
+  color: white;
+  border-color: #4a90e2;
+}
+
+.pagination-info {
+  margin-left: 10px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Table responsiveness improvements */
+.table-responsive {
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+
+.task-table th {
+  position: sticky;
+  top: 0;
+  background-color: #f8f9fa;
+  z-index: 1;
+}
+
+/* Clickable row styles */
+.clickable-row {
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.clickable-row:hover {
+  background-color: #f5f5f5;
+}
+
+/* Make sure action buttons don't trigger row click */
+.action-buttons button {
+  position: relative;
+  z-index: 2;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .filters-container {
+    flex-direction: column;
+  }
+  
+  .filter-group {
+    width: 100%;
+  }
+  
+  .pagination {
+    justify-content: space-between;
+  }
+}
+
+
+/* Tab styles */
+.tabs {
+  display: flex;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.tab-button {
+  padding: 10px 20px;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.2s;
+}
+
+.tab-button:hover {
+  background-color: #f5f5f5;
+}
+
+.tab-button.active {
+  border-bottom: 3px solid #4a90e2;
+  font-weight: bold;
+}
+
+/* Report styles */
+.reports-container {
+  padding: 20px 0;
+}
+
+.report-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+.report-table th, .report-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.report-table th {
+  background-color: #f8f9fa;
+  font-weight: bold;
+}
+
+/* Chart styles */
+.chart-container {
+  margin-top: 30px;
+}
+
+.chart-bar-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.chart-label {
+  width: 150px;
+  font-weight: 500;
+}
+
+.chart-bar {
+  background-color: #4a90e2;
+  color: white;
+  padding: 8px;
+  border-radius: 4px;
+  text-align: right;
+  min-width: 30px;
+  transition: width 0.5s ease-in-out;
+}
